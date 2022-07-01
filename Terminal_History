@@ -1,0 +1,122 @@
+Last login: Thu Jun 30 23:25:45 on ttys000
+(base) libaijialin@Lis-MacBook-Pro ~ % cd desktop
+(base) libaijialin@Lis-MacBook-Pro desktop % cd fintech_bootcamp
+(base) libaijialin@Lis-MacBook-Pro fintech_bootcamp % cd WK2
+(base) libaijialin@Lis-MacBook-Pro WK2 % ls 
+01_Stu_Python_Code_Drills	Class_1_Activities-3
+02_Stu_Build_ATM_Functions	Class_2_Activities-2
+03_Stu_Create_Github_Repository	Starter_Code
+04_Stu_ATM_Application_Code
+(base) libaijialin@Lis-MacBook-Pro WK2 % cd Starter_Code
+(base) libaijialin@Lis-MacBook-Pro Starter_Code % ls
+loan_qualifier_app
+(base) libaijialin@Lis-MacBook-Pro Starter_Code % cd loan_qualifier_app
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git clone git@github.com:RL2619/Loan_Qualifier_App.git
+Cloning into 'Loan_Qualifier_App'...
+Enter passphrase for key '/Users/libaijialin/.ssh/id_rsa': 
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % cd ls 
+cd: no such file or directory: ls
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % ls
+Loan_Qualifier_App	app.py			qualifier
+README.md		data
+Terminal Output		loans.csv
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git status
+fatal: not a git repository (or any of the parent directories): .git
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % ls
+Loan_Qualifier_App	README.md
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % cd loan_qualifier_app
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	Terminal Output
+	app.py
+	data/
+	loans.csv
+	qualifier/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git add .
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   Terminal Output
+	new file:   app.py
+	new file:   data/daily_rate_sheet.csv
+	new file:   loans.csv
+	new file:   qualifier/.DS_Store
+	new file:   qualifier/filters/__pycache__/credit_score.cpython-37.pyc
+	new file:   qualifier/filters/__pycache__/credit_score.cpython-39.pyc
+	new file:   qualifier/filters/__pycache__/debt_to_income.cpython-37.pyc
+	new file:   qualifier/filters/__pycache__/debt_to_income.cpython-39.pyc
+	new file:   qualifier/filters/__pycache__/loan_to_value.cpython-37.pyc
+	new file:   qualifier/filters/__pycache__/loan_to_value.cpython-39.pyc
+	new file:   qualifier/filters/__pycache__/max_loan_size.cpython-37.pyc
+	new file:   qualifier/filters/__pycache__/max_loan_size.cpython-39.pyc
+	new file:   qualifier/filters/credit_score.py
+	new file:   qualifier/filters/debt_to_income.py
+	new file:   qualifier/filters/loan_to_value.py
+	new file:   qualifier/filters/max_loan_size.py
+	new file:   qualifier/utils/__pycache__/calculators.cpython-37.pyc
+	new file:   qualifier/utils/__pycache__/calculators.cpython-39.pyc
+	new file:   qualifier/utils/__pycache__/fileio.cpython-37.pyc
+	new file:   qualifier/utils/__pycache__/fileio.cpython-39.pyc
+	new file:   qualifier/utils/calculators.py
+	new file:   qualifier/utils/fileio.py
+
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git commit -m " list of loan qualifier "
+[main 148ee57]  list of loan qualifier
+ 24 files changed, 385 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 Terminal Output
+ create mode 100644 app.py
+ create mode 100644 data/daily_rate_sheet.csv
+ create mode 100644 loans.csv
+ create mode 100644 qualifier/.DS_Store
+ create mode 100644 qualifier/filters/__pycache__/credit_score.cpython-37.pyc
+ create mode 100644 qualifier/filters/__pycache__/credit_score.cpython-39.pyc
+ create mode 100644 qualifier/filters/__pycache__/debt_to_income.cpython-37.pyc
+ create mode 100644 qualifier/filters/__pycache__/debt_to_income.cpython-39.pyc
+ create mode 100644 qualifier/filters/__pycache__/loan_to_value.cpython-37.pyc
+ create mode 100644 qualifier/filters/__pycache__/loan_to_value.cpython-39.pyc
+ create mode 100644 qualifier/filters/__pycache__/max_loan_size.cpython-37.pyc
+ create mode 100644 qualifier/filters/__pycache__/max_loan_size.cpython-39.pyc
+ create mode 100644 qualifier/filters/credit_score.py
+ create mode 100644 qualifier/filters/debt_to_income.py
+ create mode 100644 qualifier/filters/loan_to_value.py
+ create mode 100644 qualifier/filters/max_loan_size.py
+ create mode 100644 qualifier/utils/__pycache__/calculators.cpython-37.pyc
+ create mode 100644 qualifier/utils/__pycache__/calculators.cpython-39.pyc
+ create mode 100644 qualifier/utils/__pycache__/fileio.cpython-37.pyc
+ create mode 100644 qualifier/utils/__pycache__/fileio.cpython-39.pyc
+ create mode 100644 qualifier/utils/calculators.py
+ create mode 100644 qualifier/utils/fileio.py
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % git push
+Enter passphrase for key '/Users/libaijialin/.ssh/id_rsa': 
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (32/32), 9.79 KiB | 2.45 MiB/s, done.
+Total 32 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To github.com:RL2619/Loan_Qualifier_App.git
+   e4980fb..148ee57  main -> main
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % 
