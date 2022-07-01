@@ -1,0 +1,37 @@
+Last login: Thu Jun 30 19:58:57 on ttys000
+(base) libaijialin@Lis-MacBook-Pro ~ % cd desktop
+(base) libaijialin@Lis-MacBook-Pro desktop % cd Fintech_BootCamp
+(base) libaijialin@Lis-MacBook-Pro Fintech_BootCamp % cd WK2
+(base) libaijialin@Lis-MacBook-Pro WK2 % ls
+01_Stu_Python_Code_Drills	Class_1_Activities-3
+02_Stu_Build_ATM_Functions	Class_2_Activities-2
+03_Stu_Create_Github_Repository	Starter_Code
+04_Stu_ATM_Application_Code
+(base) libaijialin@Lis-MacBook-Pro WK2 % cd Starter_Code
+(base) libaijialin@Lis-MacBook-Pro Starter_Code % ls
+loan_qualifier_app
+(base) libaijialin@Lis-MacBook-Pro Starter_Code % cd loan_qualifier_app
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % ls
+README.md	app.py		data		loans.csv	qualifier
+(base) libaijialin@Lis-MacBook-Pro loan_qualifier_app % conda activate atmdev
+(atmdev) libaijialin@Lis-MacBook-Pro loan_qualifier_app % pwd
+/Users/libaijialin/desktop/Fintech_BootCamp/WK2/Starter_Code/loan_qualifier_app
+(atmdev) libaijialin@Lis-MacBook-Pro loan_qualifier_app % python app.py
+? Enter a file path to a rate-sheet (.csv): daily_rate_sheet.csv
+Oops! Can't find this path: daily_rate_sheet.csv
+(atmdev) libaijialin@Lis-MacBook-Pro loan_qualifier_app % /.daily_rate_sheet.csv 
+zsh: no such file or directory: /.daily_rate_sheet.csv
+(atmdev) libaijialin@Lis-MacBook-Pro loan_qualifier_app % ./daily_rate_sheet.csv
+zsh: no such file or directory: ./daily_rate_sheet.csv
+(atmdev) libaijialin@Lis-MacBook-Pro loan_qualifier_app % python app.py
+? Enter a file path to a rate-sheet (.csv): /Users/libaijialin/Desktop/Fintech_B
+ootCamp/WK2/Starter_Code/loan_qualifier_app/data/daily_rate_sheet.csv
+? What's your credit score? 780
+? What's your current amount of monthly debt? 0
+? What's your total monthly income? 40000
+? What's your desired loan amount? 200000
+? What's your home value? 600000
+The monthly debt to income ratio is 0.00
+The loan to value ratio is 0.33.
+Found 17 qualifying loans
+(atmdev) libaijialin@Lis-MacBook-Pro loan_qualifier_app % 
